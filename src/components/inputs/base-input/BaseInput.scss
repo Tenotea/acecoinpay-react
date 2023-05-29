@@ -1,0 +1,29 @@
+#base-input {
+  position: relative;
+
+  .base-input {
+    &--field {
+      border: 1.5px solid #e1e4eb;
+      border-radius: 7px;
+      padding: 1rem;
+      height: 60px;
+      display: block;
+      width: 100%;
+      font-weight: 700;
+      color: #1e2a52;
+
+      &.center {
+        text-align: center;
+      }
+    }
+
+    &--icon {
+      position: absolute;
+      right: 1rem;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      color: #a4aaba;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+#clock {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+
+  .time-container {
+    display: flex;
+    gap: 0.3rem;
+
+    &--value {
+      background-color: #1e2a52;
+      color: white;
+      padding: 0.5rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+  }
+
+  .divider {
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,72 @@
+#checkout-template {
+  // display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: auto;
+  background-color: #f9fafc;
+  background-image: url(https://4kwallpapers.com/images/wallpapers/windows-11-dark-mode-blue-stock-official-1920x1080-5630.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 600px) {
+    padding: 2rem;
+
+    @media screen and (min-width: 1024px) {
+      display: grid;
+      padding: 3rem;
+
+      @media screen and (min-width: 1200px) {
+        padding: 5rem;
+      }
+    }
+  }
+
+  .checkout-container {
+    position: relative;
+    padding: 5rem 0 3rem;
+    border: 1px solid #f5f5f5;
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 500px;
+
+    @media screen and (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+
+      @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    &--cancel-button {
+      width: 50px;
+      height: 50px;
+      background-color: #f9fafc;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: grid;
+      place-items: center;
+    }
+
+    #card-collection-chunk {
+      @media screen and (min-width: 1024px) {
+        grid-column: 1 / 4;
+        @media screen and (min-width: 1200px) {
+          grid-column: 1 / 3;
+        }
+      }
+    }
+
+    #payment-summary-chunk {
+      @media screen and (min-width: 1024px) {
+        grid-column: 4 / 6;
+        @media screen and (min-width: 1200px) {
+          grid-column: unset;
+        }
+      }
+    }
+  }
+}

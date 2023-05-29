@@ -1,0 +1,48 @@
+#card-input {
+  border: 1.5px solid #e1e4eb;
+  display: flex;
+  border-radius: 7px;
+  align-items: center;
+  padding: 1rem;
+  gap: 1.5rem;
+
+  .card-type {
+    flex-shrink: 0;
+  }
+
+  .card-slots {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      &--input {
+        display: block;
+        width: 100%;
+        max-width: 42px;
+        border: none;
+        font-weight: 700;
+        color: #7a84a3;
+
+        &::placeholder {
+          color: #b4bcd3;
+        }
+      }
+
+      &--divider {
+        color: #1e2a53;
+        font-weight: 800;
+      }
+    }
+  }
+
+  .status-badge {
+    color: #00a1f1;
+    flex-shrink: 0;
+  }
+}

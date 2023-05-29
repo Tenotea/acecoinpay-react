@@ -1,0 +1,68 @@
+#card-collection-chunk {
+  padding-right: 1.4rem;
+
+  @media screen and (min-width: 600px) {
+    padding-right: 2rem;
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
+
+  .content-section {
+    margin-top: 2rem;
+    padding: 0 0 0 1.4rem;
+
+    @media screen and (min-width: 600px) {
+      padding-left: 2rem;
+      @media screen and (min-width: 1024px) {
+        padding-left: 2.8rem;
+      }
+    }
+
+    &__card-input {
+      margin-bottom: 2.5rem;
+      &--heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &--container {
+        margin-top: 1rem;
+      }
+    }
+
+    &__grid-input {
+      display: grid;
+      margin: 2rem 0;
+      align-items: center;
+      gap: 0.5rem;
+
+      @media screen and (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &__expiry-input {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &--divider {
+        font-weight: 700;
+      }
+    }
+
+    &__button-container {
+      display: none;
+
+      @media screen and (min-width: 1024px) {
+        display: block;
+      }
+    }
+  }
+}

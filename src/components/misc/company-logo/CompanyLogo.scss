@@ -1,0 +1,12 @@
+#company-logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .logo {
+    height: 40px;
+    @media screen and (min-width: 1024px) {
+      height: 70px;
+    }
+  }
+}

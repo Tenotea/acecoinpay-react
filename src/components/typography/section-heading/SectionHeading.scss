@@ -1,0 +1,14 @@
+#section-heading {
+  .section-heading {
+    &--title {
+      font-size: 1.1rem;
+      color: #1e2a52;
+    }
+
+    &--caption {
+      font-size: 0.8rem;
+      color: #7782a2;
+      margin-top: 0.4rem;
+    }
+  }
+}
